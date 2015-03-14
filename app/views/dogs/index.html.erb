@@ -1,9 +1,8 @@
-<h1> Dogs Index Page </h1>
+<h1>Dogs Index Page </h1>
 
 <% @dogs.each do |d| %>
     <h3> <%= d.name %> </h3>
     <p> Age: <%= d.age %> </p>
-    <p> -------------------------------------- </p>
 <% end %>
 
 <%= link_to "new", dogs_new_path %>
